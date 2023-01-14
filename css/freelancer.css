@@ -42,6 +42,13 @@ a.active {
     color: #95ff7b;
 }
 
+@media(max-width:767px) {
+    .navbar-default .navbar-collapse {
+        background-color: #9346a8;
+        border-width: 0;
+    }
+}
+
 h1,
 h2,
 h3,
