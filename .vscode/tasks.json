@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Serve local website",
+            "type": "shell",
+            "command": "python -c 'import livereload.cli as l; l.main()' -p 8000 --host 0.0.0.0 -w 1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Open Chrome",
+            "type": "shell",
+            "command": "start chrome -ArgumentList --autoplay-policy=no-user-gesture-required,--disk-cache-dir=null,--user-data-dir=C:\\chrome-dev-profile-herbal-tea,http://localhost:8000/,--auto-open-devtools-for-tabs",
+            "presentation": {
+                "reveal": "never",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+    ]
+}
